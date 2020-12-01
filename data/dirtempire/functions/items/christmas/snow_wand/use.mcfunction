@@ -1,3 +1,5 @@
+function dirtempire:items/durability
+
 execute positioned ^ ^ ^15 run summon minecraft:armor_stand ~ ~1.5 ~ {Invisible:1b,NoGravity:1b,CustomName:'{"text":"delete"}'}
 execute positioned ^ ^ ^1 run summon minecraft:snowball ~ ~1.5 ~ {CustomName:'{"text":"snow-wand.proj"}',Tags:["spawning"],Motion:[0.0,0.5,0.0]}
 

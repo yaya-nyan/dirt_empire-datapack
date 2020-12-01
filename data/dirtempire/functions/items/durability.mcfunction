@@ -3,6 +3,8 @@ data modify entity @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] Item set
 
 execute as @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] store result score @s temp run data get entity @s Item.tag.Damage
 execute as @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] store result entity @s Item.tag.Damage int 1 run scoreboard players add @s temp 1
+execute if data entity @s SelectedItem.tag.usesMana as @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] if score @s temp matches 26.. run playsound minecraft:item.shield.break player @a ~ ~ ~
+execute if data entity @s SelectedItem.tag.usesMana as @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] if score @s temp matches 26.. run kill @s
 
 execute as @e[distance=..5,type=minecraft:item,tag=!dur] run data merge entity @s {PickupDelay:5s}
 
