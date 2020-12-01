@@ -1,4 +1,4 @@
-execute unless entity @e[type=item,tag=dur,limit=1,distance=..2] run summon minecraft:item ~ ~ ~ {NoGravity:true,PickupDelay:32767s,Tags:["dur"],Item:{id:"minecraft:barrier",Count:1b}}
+execute unless entity @e[type=item,tag=dur,limit=1,distance=..2] run summon minecraft:item ~ ~ ~ {NoGravity:true,PickupDelay:32767s,Tags:["dur"],Item:{id:"minecraft:barrier",Count:1b}, Age:10s}
 data modify entity @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] Item set from entity @s SelectedItem
 
 execute as @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] unless data entity @s Item.tag.lumberDamage run data merge entity @s {Item:{tag:{lumberDamage:0}}}
@@ -17,3 +17,4 @@ kill @e[distance=..2,type=minecraft:item,nbt={Item:{tag:{Clutter:true}}}]
 replaceitem entity @s weapon.mainhand minecraft:air
 data merge entity @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] {PickupDelay:0s}
 stopsound @s player minecraft:entity.item.pickup
+stopsound @s neutral minecraft:entity.armor_stand.break
