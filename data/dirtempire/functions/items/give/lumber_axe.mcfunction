@@ -1,0 +1,1 @@
+give @s iron_axe{Lumber:true,display:{Name:'{"text":"Lumber Axe","italic":false,"color":"gold"}',Lore:['[{"text":"Chop down entire trees!","italic":false}]']}}
