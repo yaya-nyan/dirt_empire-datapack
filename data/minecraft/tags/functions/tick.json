@@ -1,6 +1,7 @@
 {
 	"replace": "false",
 	"values": [
-		"dirtempire:items/update"
+		"dirtempire:items/update",
+		"dirtempire:projectiles/update"
 	]
 }
