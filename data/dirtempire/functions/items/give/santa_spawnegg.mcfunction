@@ -1,0 +1,1 @@
+give @s bat_spawn_egg{EntityTag:{CustomName:'[{"text":"Santa"}]',Health:1,Silent:1,Attributes:[{Name:"generic.max_health",Base:1F}],Tags:["Spawner"]},display:{Name:'{"text":"Santa Spawn egg","italic":false}'}} 1
