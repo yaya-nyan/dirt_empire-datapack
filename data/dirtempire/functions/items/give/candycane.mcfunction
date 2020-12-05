@@ -1,0 +1,1 @@
+give @s minecraft:sugar{CustomModelData:1,display:{Name:'{"text":"Candy Cane","italic":false}'}}
