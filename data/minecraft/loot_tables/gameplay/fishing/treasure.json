@@ -68,27 +68,35 @@
           "name": "minecraft:sugar",
           "functions": [
             {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "min": 0,
-                "max": 1
-              }
-            },
-            {
               "function": "minecraft:set_count",
               "count": {
-                "min": 0,
-                "max": 1
+                "min": 3,
+                "max": 5
               }
             },
             {
               "function": "minecraft:set_nbt",
               "tag": "{CustomModelData:1,display:{Name:'{\"text\":\"Candy Cane\",\"italic\":false}'}}"
             }
-          ],
-          "conditions": [
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bat_spawn_egg",
+          "functions": [
             {
-              "condition": "minecraft:killed_by_player"
+              "function": "minecraft:set_nbt",
+              "tag": "{EntityTag:{CustomName:'[{\"text\":\"Present tier 2\"}]',Health:1,Silent:1,DeathLootTable:\"dirtempire:christmas/presents/tier2\",Attributes:[{Name:\"generic.max_health\",Base:1F}],Tags:[\"Present\",\"Tier2\"]},display:{Name:'{\"text\":\"Present tier 2\",\"italic\":false,\"color\":\"gold\"}'},CustomModelData:3}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bat_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{EntityTag:{CustomName:'[{\"text\":\"Present tier 1\"}]',Health:1,Silent:1,DeathLootTable:\"dirtempire:christmas/presents/tier1\",Attributes:[{Name:\"generic.max_health\",Base:1F}],Tags:[\"Present\",\"Tier1\"]},display:{Name:'{\"text\":\"Present tier 1\",\"italic\":false}'},CustomModelData:2}"
             }
           ]
         }

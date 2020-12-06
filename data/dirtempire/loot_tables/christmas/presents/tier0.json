@@ -8,6 +8,7 @@
         "entries": [
           {
             "type": "minecraft:item",
+            "weight": 5,
             "name": "minecraft:charcoal",
             "functions": [
               {
@@ -21,6 +22,7 @@
           },
           {
             "type": "minecraft:item",
+            "weight": 5,
             "name": "minecraft:coal",
             "functions": [
               {
@@ -28,6 +30,35 @@
                 "count": {
                   "min": 1,
                   "max": 3
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:wooden_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"Nicholas\\' Cane\",\"italic\":false,\"color\":\"aqua\"}'},Enchantments:[{lvl:2, id:\"minecraft:knockback\"}]}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:sugar",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:1,display:{Name:'{\"text\":\"Candy Cane\",\"italic\":false}'}}"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
                 }
               }
             ]
