@@ -4,6 +4,7 @@
 		"dirtempire:items/update",
 		"dirtempire:projectiles/update",
 		"dirtempire:christmas/update_gifts",
-		"dirtempire:npcs/update"
+		"dirtempire:npcs/update",
+		"dirtempire:decorations/update"
 	]
 }
