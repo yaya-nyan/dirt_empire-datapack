@@ -98,6 +98,21 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:item_frame",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Advent Wreath\",\"italic\":false}'},EntityTag:{Invisible:1b,Facing:1b,Item:{id:\"item_frame\",Count:1,tag:{CustomModelData:1}},Tags:[\"decoration\"],CustomName:'{\"text\":\"christmas_wreath\"}'},CustomModelData:1}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
         }
       ]
     }
