@@ -21,5 +21,11 @@ execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b, tag:{BlockEquip:1b}}
 execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b, tag:{BlockEquip:1b}}]}] run clear @s minecraft:leather_helmet{blocker:1b}
 execute as @a[nbt={Inventory:[{Slot:-106b, tag:{BlockEquip:1b}}]}] run function dirtempire:items/block_equip
 
+#Dropped Eternal Snowflakes particle
+execute as @e[type=item,nbt={Item:{id:"minecraft:sugar",tag:{CustomModelData:2}}}] run scoreboard players add @s temp 1
+execute as @e[type=item,nbt={Item:{id:"minecraft:sugar",tag:{CustomModelData:2}}}] if score @s temp matches 2.. at @s run particle minecraft:falling_dust snow ~ ~0.5 ~ 0.25 0.25 0.25 0.1 1
+execute as @e[type=item,nbt={Item:{id:"minecraft:sugar",tag:{CustomModelData:2}}}] if score @s temp matches 2.. run scoreboard players set @s temp 0
+
+#other
 execute as @a at @s unless entity @e[type=item,tag=dur,limit=1,distance=..2] run clear @s minecraft:oak_boat{Clutter:true}
 execute as @a if score @s useItem matches 1.. run scoreboard players set @s useItem 0

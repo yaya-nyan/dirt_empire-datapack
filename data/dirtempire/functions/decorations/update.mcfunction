@@ -9,3 +9,6 @@ execute as @e[type=item_frame,tag=decoration,name=christmas_wreath] if score @s 
 execute as @e[type=item_frame,tag=decoration,name=christmas_wreath] if score @s temp matches 5 at @s run particle flame ~-0.275 ~0.45 ~-0.275 0 0 0 0.001 1
 
 execute as @e[type=item_frame,tag=decoration,name=christmas_wreath] if score @s temp matches 16.. at @s run scoreboard players set @s temp 0
+
+#eternal snowflake particles
+execute as @e[type=item_frame,nbt={Item:{id:"minecraft:sugar",tag:{CustomModelData:2}}}] at @s run particle minecraft:falling_dust snow ~ ~5 ~ 7.5 3 7.5 0.1 2
