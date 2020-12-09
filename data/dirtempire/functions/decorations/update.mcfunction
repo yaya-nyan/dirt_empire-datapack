@@ -1,7 +1,7 @@
 #breaking decorations
 execute as @e[type=item_frame,tag=decoration] unless data entity @s Item at @s run function dirtempire:decorations/break
-execute as @e[type=item_frame,tag=decoration] at @s unless block ~ ~ ~ air run function dirtempire:decorations/break
-execute as @e[type=item_frame,tag=decoration] at @s if block ~ ~-1 ~ air run function dirtempire:decorations/break
+execute as @e[type=item_frame,tag=decoration] at @s unless block ~ ~ ~ void_air unless block ~ ~ ~ air unless block ~ ~ ~ cave_air run function dirtempire:decorations/break
+execute as @e[type=item_frame,tag=decoration] at @s if block ~ ~-1 ~ air if block ~ ~-1 ~ void_air if block ~ ~-1 ~ cave_air run function dirtempire:decorations/break
 
 #advent wreath particles
 execute as @e[type=item_frame,tag=decoration,name=christmas_wreath] run scoreboard players add @s temp 1
