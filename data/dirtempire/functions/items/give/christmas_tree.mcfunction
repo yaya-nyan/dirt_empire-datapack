@@ -1,0 +1,1 @@
+give @s item_frame{display:{Name:'{"text":"Christmas Tree","italic":false}'},EntityTag:{Invisible:1b,Facing:1b,Item:{id:"item_frame",Count:1,tag:{CustomModelData:2}},Tags:["decoration"],CustomName:'{"text":"christmas_tree"}'},CustomModelData:2}

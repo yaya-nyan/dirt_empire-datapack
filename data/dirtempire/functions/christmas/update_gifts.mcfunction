@@ -1,0 +1,1 @@
+execute as @e[tag=Present] at @s run function dirtempire:christmas/open_gift

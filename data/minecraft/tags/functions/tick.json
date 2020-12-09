@@ -1,6 +1,10 @@
 {
 	"replace": "false",
 	"values": [
-		"dirtempire:items/update"
+		"dirtempire:items/update",
+		"dirtempire:projectiles/update",
+		"dirtempire:christmas/update_gifts",
+		"dirtempire:npcs/update",
+		"dirtempire:decorations/update"
 	]
 }
