@@ -18,5 +18,7 @@ execute as @e[type=item_frame,tag=decoration,name=christmas_wreath] at @s unless
 execute as @e[type=item_frame,tag=decoration,name=christmas_tree] at @s unless block ~ ~ ~ air unless block ~ ~ ~ void_air unless block ~ ~ ~ cave_air run function dirtempire:items/convert_to/christmas_tree
 
 execute as @e[type=item_frame,tag=decoration] unless data entity @s Item run kill @s
-execute as @e[type=item_frame,tag=decoration] at @s if block ~ ~-1 ~ air if block ~ ~-1 ~ void_air if block ~ ~-1 ~ cave_air run kill @s
+execute as @e[type=item_frame,tag=decoration] at @s if block ~ ~-1 ~ air run kill @s
+execute as @e[type=item_frame,tag=decoration] at @s if block ~ ~-1 ~ void_air run kill @s
+execute as @e[type=item_frame,tag=decoration] at @s if block ~ ~-1 ~ cave_air run kill @s
 execute as @e[type=item_frame,tag=decoration] at @s unless block ~ ~ ~ air unless block ~ ~ ~ void_air unless block ~ ~ ~ cave_air run kill @s
