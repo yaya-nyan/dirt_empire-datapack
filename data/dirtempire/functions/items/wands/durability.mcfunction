@@ -8,6 +8,7 @@ execute as @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] if score @s temp
 execute as @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] store result score @s temp2 run data get entity @s Item.tag.wandDamage
 execute as @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] store result entity @s Item.tag.wandDamage int 1 run scoreboard players add @s temp2 1
 
+execute as @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] store result score @s temp run data get entity @s Item.tag.Damage
 execute if data entity @s SelectedItem.tag.usesMana as @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] if score @s temp matches 26.. run playsound minecraft:item.shield.break player @a ~ ~ ~
 execute if data entity @s SelectedItem.tag.usesMana as @e[type=minecraft:item,tag=dur,sort=nearest,limit=1] if score @s temp matches 26.. run kill @s
 

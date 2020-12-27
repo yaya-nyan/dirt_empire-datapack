@@ -8,5 +8,5 @@ execute as @e[type=armor_stand,name=Santa] if score @s temp matches 500.. run sc
 
 #Snow Golems
 execute as @e[type=snow_golem] run scoreboard players add @s temp 1
-execute as @e[type=snow_golem] if score @s temp matches 1450.. at @s run loot spawn ~ ~ ~ loot dirtempire:christmas/snow_golem_idle
-execute as @e[type=snow_golem] if score @s temp matches 1451.. run scoreboard players set @s temp 0
+execute as @e[type=snow_golem] if score @s temp matches 3000.. at @s run loot spawn ~ ~ ~ loot dirtempire:christmas/snow_golem_idle
+execute as @e[type=snow_golem] if score @s temp matches 3001.. run scoreboard players set @s temp 0

@@ -1,0 +1,1 @@
+give @p carrot_on_a_stick{display:{Name:'[{"text":"Lightning Wand","italic":false,"color":"#cc0099"}]'},Wand:"Lightning"} 1
