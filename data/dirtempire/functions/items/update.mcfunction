@@ -4,7 +4,8 @@ execute as @e[tag=newWood] at @s unless entity @e[type=item,sort=nearest,limit=1
 
 #Use Wands
 execute as @a[nbt={SelectedItem:{tag:{Wand:"Snow"}}}] if score @s useItem matches 1.. at @s run function dirtempire:items/wands/snow_wand/use
-execute as @e[tag=newWood] at @s unless entity @e[type=item,sort=nearest,limit=1,distance=..3,nbt={Age:0s}] run kill @s
+execute as @a[nbt={SelectedItem:{tag:{Wand:"Lightning"}}}] if score @s useItem matches 1.. at @s run function dirtempire:items/wands/lightning_wand/use
+execute as @a[nbt={SelectedItem:{tag:{Wand:"Lightning"}}}] if score @s useItem matches 0 if score @s summoning matches 1 at @s run function dirtempire:items/wands/lightning_wand/use
 
 #Snowy Helmet
 execute as @a[nbt={Inventory:[{Slot:103b, tag:{Snowy:1b}}]}] at @s run particle minecraft:falling_dust snow ~ ~5 ~ 5 0.25 5 0.1 1
@@ -28,4 +29,5 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:sugar",tag:{CustomModelData:2}}
 
 #other
 execute as @a at @s unless entity @e[type=item,tag=dur,limit=1,distance=..2] run clear @s minecraft:oak_boat{Clutter:true}
-execute as @a if score @s useItem matches 1.. run scoreboard players set @s useItem 0
+execute as @a run title @s actionbar {"text":""}
+execute as @a if score @s summoning matches 1 run title @s actionbar ["",{"text":"[summoning] ","color":"dark_purple"},{"text":"Focus: "},{"score":{"name":"@s","objective":"useItem"}}]

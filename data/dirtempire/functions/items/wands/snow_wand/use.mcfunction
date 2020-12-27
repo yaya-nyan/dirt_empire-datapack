@@ -13,3 +13,4 @@ execute as @e[type=snowball,name=snow-wand.proj,tag=spawning] store result entit
 
 execute as @e[type=snowball,name="snow-wand.proj",tag=spawning] run tag @s remove spawning
 kill @e[name=delete]
+scoreboard players set @s useItem 0
