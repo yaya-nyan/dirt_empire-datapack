@@ -1,20 +1,11 @@
-loot spawn ~ ~ ~ kill @s
+execute if entity @s[tag=Tier0] at @s run execute as @p run give @p bat_spawn_egg{EntityTag:{CustomName:'[{"text":"Present tier 0"}]',Health:1,Silent:1,DeathLootTable:"dirtempire:christmas/presents/tier0",Attributes:[{Name:"generic.max_health",Base:1F}],Tags:["Present","Tier0"]},display:{Name:'{"text":"Present tier 0","italic":false,"color":"gray"}'},CustomModelData:1} 1
 
-execute if entity @s[tag=Tier0] run particle minecraft:dust 0.2 0.2 0.2 1 ~ ~ ~ 0.25 0.25 0.25 1 25
-execute if entity @s[tag=Tier0] run playsound minecraft:entity.villager.no player @a ~ ~ ~
+execute if entity @s[tag=Tier1] at @s run execute as @p run give @p bat_spawn_egg{EntityTag:{CustomName:'[{"text":"Present tier 1"}]',Health:1,Silent:1,DeathLootTable:"dirtempire:christmas/presents/tier1",Attributes:[{Name:"generic.max_health",Base:1F}],Tags:["Present","Tier1"]},display:{Name:'{"text":"Present tier 1","italic":false}'},CustomModelData:2} 1
 
-execute if entity @s[tag=Tier1] run particle minecraft:dust 1 1 1 1 ~ ~ ~ 0.25 0.25 0.25 1 25
-execute if entity @s[tag=Tier1] run playsound minecraft:entity.villager.yes player @a ~ ~ ~
+execute if entity @s[tag=Tier2] at @s run execute as @p run give @p bat_spawn_egg{EntityTag:{CustomName:'[{"text":"Present tier 2"}]',Health:1,Silent:1,DeathLootTable:"dirtempire:christmas/presents/tier2",Attributes:[{Name:"generic.max_health",Base:1F}],Tags:["Present","Tier2"]},display:{Name:'{"text":"Present tier 2","italic":false,"color":"gold"}'},CustomModelData:3} 1
 
-execute if entity @s[tag=Tier2] run particle minecraft:dust 1 1 1 1 ~ ~ ~ 0.25 0.25 0.25 1 25
-execute if entity @s[tag=Tier2] run particle minecraft:end_rod ~ ~ ~ 0 0 0 0.1 10
-execute if entity @s[tag=Tier2] run playsound minecraft:block.note_block.bell player @a ~ ~ ~
-execute if entity @s[tag=Tier2] run playsound minecraft:entity.villager.yes player @a ~ ~ ~
-
-execute if entity @s[tag=Tier3] run particle minecraft:dust 1 1 1 1 ~ ~ ~ 0.25 0.25 0.25 1 25
-execute if entity @s[tag=Tier3] run particle minecraft:falling_dust snow ~ ~3 ~ 1 0.1 1 0.1 100
-execute if entity @s[tag=Tier3] run playsound minecraft:block.note_block.bell player @a ~ ~ ~
-execute if entity @s[tag=Tier3] run playsound minecraft:entity.villager.yes player @a ~ ~ ~
+execute if entity @s[tag=Tier3] at @s run execute as @p run give @p bat_spawn_egg{EntityTag:{CustomName:'[{"text":"Present tier 3"}]',Health:1,Silent:1,DeathLootTable:"dirtempire:christmas/presents/tier3",Attributes:[{Name:"generic.max_health",Base:1F}],Tags:["Present","Tier3"]},display:{Name:'{"text":"Present tier 3","italic":false,"color":"light_purple"}'},CustomModelData:4} 1
 
 tp @s[type=bat] 0 0 0
 kill @s[type=bat]
+

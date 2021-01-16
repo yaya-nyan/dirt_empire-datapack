@@ -29,5 +29,4 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:sugar",tag:{CustomModelData:2}}
 
 #other
 execute as @a at @s unless entity @e[type=item,tag=dur,limit=1,distance=..2] run clear @s minecraft:oak_boat{Clutter:true}
-execute as @a run title @s actionbar {"text":""}
 execute as @a if score @s summoning matches 1 run title @s actionbar ["",{"text":"[summoning] ","color":"dark_purple"},{"text":"Focus: "},{"score":{"name":"@s","objective":"useItem"}}]

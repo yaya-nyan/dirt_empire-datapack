@@ -1,0 +1,25 @@
+{
+    "rewards": {
+        "function": "dirtempire:advancements/hitmarker"
+    },
+    "criteria": {
+        "far shot": {
+          "trigger": "minecraft:player_hurt_entity",
+          "conditions": {
+            "damage": {
+              "type": {
+                "is_projectile": true,
+                "direct_entity": {
+                  "type": "#minecraft:arrows",
+                  "distance": {
+                    "absolute": {
+                      "min": 30
+                    }
+                  }
+		            }
+              }
+            }
+          }
+        }
+      }
+}
